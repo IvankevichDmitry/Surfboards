@@ -1,0 +1,357 @@
+/* ---------------------------------------------------------------II. ЦЕНТР САЙТА--------------------------------------------------------------- -*/
+
+/* ---------------------------------1. О компании----------------------------------- */
+.Information {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(41, 147, 218, 0.7);
+  border-radius: 10%;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 100px 30px rgb(253, 253, 253);
+}
+
+h1 {
+  padding-top: 5px;
+  font: italic 30px "Fira Sans", serif;
+  font-weight: 700;
+  color: #cc0000;
+  text-shadow: 3px 3px 3px #ffd700;
+}
+
+.aboutsurf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutText {
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+  margin: 10px;
+  font: italic 30px "Fira Sans", serif;
+  color: white;
+}
+
+.aboutText p:first-child {
+  color: #ffd700;
+}
+
+.aboutText p:last-child {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.aboutImg {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 30px;
+}
+
+
+
+
+
+/* ------------------------------------2. Карточки с серфдосками------------------------------ */
+
+/* 1. блок с заданной шириной 80% от эрана и по центру */
+.big {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 1%;
+  background-color: rgba(41, 147, 218, 0.7);
+  border-radius: 1%;
+  box-shadow: 0px 0px 100px 30px rgb(253, 253, 253);
+  margin-bottom: 100px;
+}
+
+/* 2. блок flex основной по горизонатали с пробелами */
+.cardslist {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* 3. карточки сефрдосок основной*/
+.card {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5%;
+  margin: 10px;
+  min-width: 25%;
+  max-width: 30%;
+  overflow: hidden;
+}
+
+/* 3. карточки сефрдосок основной (в виде списка)*/
+li {
+  list-style-type: none;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+/* 1. картинка сефрдосок*/
+.foto {
+  margin-bottom: 5%;
+  max-width: 100%;
+  border-radius: 5%;
+  height: 400px;
+}
+
+/* 2. Название модели */
+.h2 {
+  padding-top: 5px;
+  font: italic 30px "Fira Sans", serif;
+  font-weight: 700;
+  color: #cc0000;
+  text-shadow: 3px 3px 3px #ffd700;
+}
+
+/* 3. Описание сефрдосок */
+.text {
+  word-wrap: inherit;
+  margin: 20px 0px 20px 0px;
+  font-size: 20px;
+  color: rgb(0, 62, 61);
+  font-style: italic;
+}
+
+/* 4. стоимость*/
+.zena {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 5%;
+  margin-top: 10px;
+  background-color: rgba(255, 215, 0, 0.8);
+  border-radius: 10%;
+  font: italic 700 30px "Fira Sans", serif;
+}
+
+/* 5. кнопка добавить. Подсветка кнопки через псевдокласс :hover*/
+.addlink {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgb(219, 9, 9);
+  border-radius: 10%;
+  font-size: 15px;
+  font: italic 0.8em "Fira Sans", serif;
+}
+
+.addlink:hover {
+  background-color: rgb(230, 223, 23);
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 5px rgb(146, 4, 4);
+}
+
+
+
+
+/*------------------------------------------3. Корзина --------------------------------------------*/
+
+/* 1. блок с заданной шириной auto от боковых отступов*/
+.backet {
+  display: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px;
+  background-color: rgb(48, 46, 170, 0.8);
+  width: 80%;
+  font: italic 1.5em "Fira Sans", serif;
+  box-shadow: 0px 0px 20px 5px rgb(253, 253, 253);
+  min-height: 700px;
+  color: rgb(206, 194, 35);
+}
+
+/* 2. Первая строка flex (фото и подпись) */
+.backet-foto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.backet-foto img {
+  width: 7%;
+  margin-left: 3%;
+  border-radius: 5%;
+  box-shadow: 0px 0px 20px 5px rgb(253, 253, 253);
+  background-color: rgb(255, 255, 255);
+}
+
+.backet-foto .nazv {
+  width: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10%;
+  border: 0px solid white;
+  align-self: center;
+  font: italic 2.5em "Fira Sans", serif;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}
+
+/* линия  */
+hr {
+  border: none;
+  /* Убираем границу */
+  background-color: rgb(255, 255, 255);
+  /* Цвет линии */
+  color: red;
+  /* Цвет линии для IE6-7 */
+  height: 3px;
+  /* Толщина линии */
+}
+
+/* 2 и 3 flex. Ячейки таблицы */
+.zagolovok,
+.row,
+.result2 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.result2 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  flex-direction: row;
+  align-items: center;
+  width: 63%;
+  text-align: center;
+}
+
+/* оформление таблицы */
+.oform {
+  margin-right: 1%;
+  margin-bottom: 15px;
+  font: italic 30px sans-serif;
+  padding: 10px;
+  box-shadow: 0px 0px 20px 5px rgb(253, 253, 253);
+  min-width: 20%;
+}
+
+/* оформление ячеек таблицы */
+.row div {
+  width: 15%;
+  padding: 10px;
+  margin-right: 1%;
+  margin-bottom: 15px;
+  font: italic 700 1.6em sans-serif;
+  color: rgb(230, 223, 23);
+}
+
+.buttonBasket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* КНОПКА */
+.total {
+  margin-top: 50px;
+  width: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font: italic 1.5em "Fira Sans", serif;
+  font-weight: 700;
+  color: #cc0000;
+  text-shadow: 3px 3px 3px #ffd700;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.total:hover {
+  background-color: rgb(226, 219, 6);
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+}
+
+/* .totalClear {
+  background-image: url("img/basket.png");
+  width: 100px;
+  background-position: 50%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  border: 0px;
+  border-radius: 10px;
+} */
+
+/* ИТОГ */
+.result2 {
+  color: red;
+  font-size: 30px;
+  font: italic 700 1.6em sans-serif;
+}
+
+
+/*--------------------------Добавление и удаление элементов корзины -------------------------------*/
+
+
+.row div.add,
+.row div.del {
+  color: rgb(230, 23, 23);
+  background-color: #ffd700;
+  box-shadow: #ffd700;
+  width: 5%;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 5px rgb(146, 4, 4);
+}
+
+/* -------------  Всплывающие подсказки в карзине -------------------- */
+[data-tooltip] {
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+[data-tooltip]::after {
+  text-align: center;
+  content: attr(data-tooltip);
+  /* Выводим текст */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  width: 250px;
+  /* Ширина подсказки */
+  left: 0;
+  top: 0;
+  /* Положение подсказки */
+  background: #3989c9;
+  /* Синий цвет фона */
+  color: #fff;
+  /* Цвет текста */
+  padding: 0.5em;
+  /* Поля вокруг текста */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* Параметры тени */
+  pointer-events: none;
+  /* Подсказка */
+  opacity: 0;
+  /* Подсказка невидима */
+  transition: 1s;
+  /* Время появления подсказки */
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  /* Показываем подсказку */
+  top: 2em;
+  /* Положение подсказки */
+}

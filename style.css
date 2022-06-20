@@ -1,0 +1,34 @@
+ /* --------------------------------------------------------- ОБЩИЕ СТИЛИ САЙТА --------------------------------------------------- */
+
+ body {
+   margin: 0;
+   width: auto;
+   font-family: "Montserrat", "Arial", sans-serif;
+   font-size: 16px;
+   line-height: 32px;
+   color: #222222;
+   background-image: url("img/BackgroundPage.jpg");
+   background-repeat: repeat-y;
+   background-position: top center;
+   background-size: 100%;
+ }
+
+ .site-header {
+   min-width: 550px;
+   height: 500px;
+   margin-bottom: 100px;
+   background: #847462 no-repeat center url("img/UpPage2.jpg");
+   background-size: cover;
+   border-bottom-style: solid;
+   border-bottom-color: black;
+ }
+
+ .totalClear {
+  background-image: url("img/basket.png");
+  width: 100px;
+  background-position: 50%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  border: 0px;
+  border-radius: 10px;
+}

@@ -1,0 +1,32 @@
+/* -----------------------------------------------III. ПОДВАЛ САЙТА ----------------------------------------------------------- */
+.page-footer {
+    width: auto;
+    background-color: gold;
+  }
+  
+  .container {
+    font-size: 30px;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 300px;
+    margin-right: auto;
+  }
+  
+  .copyright {
+    width: 300px;
+    margin-top: auto;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-left: 20px;
+  }
+  
